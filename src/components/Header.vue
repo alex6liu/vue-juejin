@@ -32,10 +32,22 @@
             </li>
           </ul>
         </nav>
+        <Search/>
       </div>
     </header>
   </div>
 </template>
+
+<script>
+import Search from './Search.vue';
+
+export default {
+  components: {
+    Search,
+  },
+};
+</script>
+
 
 <style lang="scss" scoped>
 .main-header .container {

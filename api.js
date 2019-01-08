@@ -4,7 +4,7 @@ const hotBaseUrl = 'https://short-msg-ms.juejin.im/';
 const smallBookBaseUrl = 'https://xiaoce-timeline-api-ms.juejin.im/';
 const bookDetailBaseUrl = 'https://xiaoce-cache-api-ms.juejin.im/';
 
-export const apiConfigUrl = {
+module.exports = {
   // activeity
   getActiveitySwiper: `${baseUrl}${version}/getEventList`,
   getCityList: `${baseUrl}${version}/getCityList`,
@@ -19,4 +19,16 @@ export const apiConfigUrl = {
   getBookInfo: `${bookDetailBaseUrl}${version}/get`,
   getListBuy: `${bookDetailBaseUrl}${version}/getListBuy`,
   getHotList: `https://xiaoce-comment-api-ms.juejin.im/${version}/getHotList`,
+
 };
+
+
+// xiaoce
+// url: 'https://xiaoce-timeline-api-ms.juejin.im/v1/getListByLastTime',
+// data: {
+//   src: 'web',
+//   uid: auth.uid || '',
+//   device_id: auth.clientId,
+//   token: auth.token,
+//   pageNum: this.data.pageNum,
+// },
